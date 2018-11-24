@@ -50,7 +50,7 @@ app.get("/faqs", function(req, res){
 app.get("/contacts", function(req, res){
     
    // res.send("This is the best class ever");
-    res.render("contacts.ejs", {contact});
+    res.render("contacts.ejs");
     console.log("Contacts page!")
     
 });
