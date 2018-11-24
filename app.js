@@ -37,6 +37,15 @@ app.get("/products", function(req, res){
     
 });
 
+// root to render FAQS page  
+app.get("/faqs", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("faqs.ejs");
+    console.log("FAAAAQQQSS")
+    
+});
+
 // root to render products page  
 app.get("/contacts", function(req, res){
     
