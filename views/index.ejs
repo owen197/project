@@ -1,0 +1,56 @@
+<% include ../partials/header %>
+
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <script>
+    
+    $(document).ready(function(){
+$("#toggleDown").click(function(){
+ $("#menu").slideToggle(1000);
+
+
+	});
+});
+  </script>
+  
+
+
+
+<!--BUTTON TO TOGGLE JQUERY FUNCTION-->
+<button type="button" class="btn btn-secondary btn-lg btn-block" id="toggleDown">Our Brands</button>
+<!-- DIV THAT WILL SLIDE DOWN UPON CLICKING THE ABOVE -->
+<center>
+<div id="menu"style="margin-top:10px; display:none;">
+  <div class="row" style="border-width:2px; height:100px;">
+    <div class="col-sm" style="margin-top:150px;" >
+      <img src="nike.png" height="200" />
+      <center><h3 style="color:white;">Nike</h3></center>
+    </div>
+    <div class="col-sm" style="margin-top:150px;">
+       <img src="puma.png" height="200" />
+     <center><h3 style="color:white;">Puma</h3></center>
+    </div>
+    <div class="col-sm" style="margin-top:150px;">
+       <img src="adidas.png" height="200" />
+     <center><h3 style="color:white;">Adidas</h3></center>
+    </div>
+  </div>
+</div>
+</center>
+
+
+
+
+</body>
+
+<% include ../partials/footer %>
+
+  
+ 
