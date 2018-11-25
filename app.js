@@ -11,21 +11,19 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // we need some way for the app to know where to look
 app.use(express.static("views"));
-
 app.use(express.static("scripts"));
+app.use(express.static("images"));
 
-
+app.set("view engine", "ejs");//this line sets the default view engine
 
 // Route ro render index page 
 app.get("/", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("index.ejs");
-    console.log("Its true you know!")
+    console.log("Index/home page")
     
 });
-
-
 
 
 // root to render products page  
@@ -33,7 +31,7 @@ app.get("/products", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("products.ejs");
-    console.log("Its true you know!")
+    console.log("products is working")
     
 });
 
@@ -46,12 +44,21 @@ app.get("/faqs", function(req, res){
     
 });
 
-// root to render products page  
+// root to render contacts page  
 app.get("/contacts", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("contacts.ejs");
     console.log("Contacts page!")
+    
+});
+
+// root to render reviews page  
+app.get("/reviews", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("reviews.ejs");
+    console.log("reviews page working!")
     
 });
 

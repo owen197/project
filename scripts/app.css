@@ -1,18 +1,49 @@
 body {
     background-color: white;
-    background-image: url("/faqs.jpg");
+   
     background-repeat:no-repeat;
     background-size: cover;
   text-align: center;
-    min-height:900px; /* we will remove this later */
+   
 }
 
-header{
-    width:60px;
+ul {
+	list-style-type: none;
+	position: fixed;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	overflow: hiddden;
+	background-color:  rgba(0, 241, 141, 0.6);
+	
+	
+}
+
+li {
+	float: left;
+	
+}
+
+li a {
+		width:60px;
 		display: block;
 		color: white;
 		text-align: center;
 		font-weight: bold;
-		padding: 24px 26px;
-		
+		padding: 20px 56px;
+		box-shadow: 
+}
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
+} 
+
+h1 {
+    color: white;
+    padding-top: 100px;
+        
 }
