@@ -62,6 +62,47 @@ app.get("/reviews", function(req, res){
     
 });
 
+
+// root to render adidas page  
+app.get("/adidas", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("adidas.ejs");
+    console.log("adidas page working!")
+    
+});
+
+// root to render nike page  
+app.get("/nike", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("nike.ejs");
+    console.log("nike page working!")
+    
+});
+
+// root to render vans page  
+app.get("/vans", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("vans.ejs");
+    console.log("vanspage working!")
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // root to render products page  
 app.get("/addcontact", function(req, res){
     
