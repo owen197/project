@@ -21,7 +21,7 @@ app.get("/", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("index.ejs");
-    console.log("Index/home page")
+    console.log("Index/home page is working")
     
 });
 
