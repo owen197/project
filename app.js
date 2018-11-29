@@ -6,6 +6,8 @@ var app = express(); //invoke express application
 //read and write over the jason file
 var fs = require('fs');
 
+var products = require("./model/products.json") // Allow access to contact json file
+
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -13,6 +15,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("views"));
 app.use(express.static("scripts"));
 app.use(express.static("images"));
+app.use(express.static("model"));
+
+
 
 app.set("view engine", "ejs");//this line sets the default view engine
 
@@ -30,17 +35,84 @@ app.get("/", function(req, res){
 app.get("/products", function(req, res){
     
    // res.send("This is the best class ever");
-    res.render("products.ejs");
+    res.render("products.ejs", {products});
     console.log("products is working")
     
 });
+
+
+// route to render contact info page 
+app.get("/createproduct", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("createproduct.ejs");
+    console.log("on contacts page!")
+    
+});
+
+
+
+
+// route to render products info page//////////////////////THIS IS THE CREATE PRODUCTS CODE/////////////////////
+app.post("/createproduct", function(req, res){
+    
+    // function to find the max id
+    
+  	function getMax(products , id) {
+		var max
+		for (var i=0; i<products.length; i++) {
+			if(!max || parseInt(products[i][id]) > parseInt(max[id]))
+				max = products[i];
+			
+		}
+		return max;
+	}
+	
+	
+	var maxPpg = getMax(products, "id"); // This calls the function above and passes the result as a variable called maxPpg.
+	newId = maxPpg.id + 1;  // this creates a nwe variable called newID which is the max Id + 1
+	console.log(newId); // We console log the new id for show reasons only
+    
+	// create a new product based on what we have in our form on the add page 
+	
+	var productsx = {
+    name: req.body.name,
+    id: newId,
+   
+    
+  };
+    
+     console.log(productsx);
+  var json = JSON.stringify(products); // Convert our json data to a string
+  
+  // The following function reads the new data and pushes it into our JSON file
+  
+  fs.readFile('./model/products.json', 'utf8', function readFileCallback(err, data){
+    if(err){
+     throw(err);
+         
+    } else {
+      
+      products.push(productsx); // add the data to the json file based on the declared variable above
+      json = JSON.stringify(products, null, 4); // converts the data to a json file and the null and 4 represent how it is structuere. 4 is indententation 
+      fs.writeFile('./model/products.json', json, 'utf8')
+    }
+    
+  })
+  res.redirect("/products");
+
+});
+
+
+
+
 
 // root to render FAQS page  
 app.get("/faqs", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("faqs.ejs");
-    console.log("FAAAAQQQSS")
+    console.log("Faqs is working")
     
 });
 
@@ -91,35 +163,6 @@ app.get("/vans", function(req, res){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// root to render products page  
-app.get("/addcontact", function(req, res){
-    
-   // res.send("This is the best class ever");
-    res.render("addcontact.ejs", {contact});
-    console.log("Contacts page!")
-    
-});
-
-// root to render products page  
-app.post("/addcontact", function(req, res){
-    
-   // res.send("This is the best class ever");
-    res.render("addcontact.ejs", {contact});
-    console.log("Contacts page!")
-    
-});
 
 
 // Now we need to tell the application where to run

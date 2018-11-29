@@ -10,24 +10,29 @@
 
 <div>
     <h1>Leave an enquiry</h1>
- 
-       <div>
-         <h5>Here is a list</h5>
-         <ol>
-           <li>Shite service</li>
-           
-           
-           
-           
-           
-           
-         </ol>
     
-    <input type ="text" name ="textbox1" size ="50" placeholder ="Enter your e-mail">
-    </br>
-    </br>
-    <input type ="text" name ="textbox2" size ="50" placeholder ="Leave a message" id ="message">
-    <button onclick ="enter" id ="submit">Submit</button>
+    <div class="w3-center">
+  <h2>Append</h2>
+  <p class="w3-large">Append items to a list!</p>
+</div>
+<br>
+
+<div class="w3-row w3-border">
+  <div class="w3-half w3-container w3-blue w3-border">
+    <h5>Here is a list</h5>  
+    <ol>
+  <li>Gerry: - I like this</li>
+  <li>Denitsa: - jQuery is great!</li>
+ 
+</ol>
+<input type="text" id="comment" name="comment" placeholder="Leave a Comment..">
+<button id="putUp" class="w3-btn w3-theme">Post</button> 
+
+  </div>
+  </div>
+    
+    
+    
     
     
     
@@ -35,22 +40,27 @@
          
        </div>
     </div>
+    <script> 
+    $(document).ready(function(){
+	$("#putUp").click(function(){
+		$("ol").append("<li>Owen: " + comment.value + "</li>")
+		
+		});
+		});
+    
+    </script>
     
     </div>
     
     
     
-    <script>
-      
-      $(document).ready(function(){
-        $("#enter").click(function(){
-          $("message").append("<li>Liam:" +comment.value + "</li>");
-          
-        });
-      });
-      
-      
-    </script>
+    
+    
+    
+    
+    
+    
+   
 </div>
 
 </body>

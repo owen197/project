@@ -1,18 +1,35 @@
-<% include ../partials/header %>
+
 
 
 <body style="background-image:url(/many.jpg)">
-
-
     
-    
-    
-    
-    
+    <div class="row">
+    <% products.forEach(function(products) { %>
+                
+                <div class="item">
+                    <%= products.id %><br>
+                    <%= products.brand %><br>
+                    <%= products.name %><br>
+                    
+                   
+                    </div>
+              
+         <% }); %>
+  </div>
     
     
 </body>
 
 
 
+
+
+
+
+
+
+
+
+
 <% include ../partials/footer %>
+
