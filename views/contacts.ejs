@@ -10,7 +10,47 @@
 
 <div>
     <h1>Leave an enquiry</h1>
-    <input type ="text" name ="textbox1" size ="50" placeholder ="Leave a message">
+ 
+       <div>
+         <h5>Here is a list</h5>
+         <ol>
+           <li>Shite service</li>
+           
+           
+           
+           
+           
+           
+         </ol>
+    
+    <input type ="text" name ="textbox1" size ="50" placeholder ="Enter your e-mail">
+    </br>
+    </br>
+    <input type ="text" name ="textbox2" size ="50" placeholder ="Leave a message" id ="message">
+    <button onclick ="enter" id ="submit">Submit</button>
+    
+    
+    
+         
+         
+       </div>
+    </div>
+    
+    </div>
+    
+    
+    
+    <script>
+      
+      $(document).ready(function(){
+        $("#enter").click(function(){
+          $("message").append("<li>Liam:" +comment.value + "</li>");
+          
+        });
+      });
+      
+      
+    </script>
 </div>
 
 </body>
