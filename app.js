@@ -78,6 +78,9 @@ app.post("/createproduct", function(req, res){
 	var productsx = {
     name: req.body.name,
     id: newId,
+    brand: req.body.brand,
+    price: req.body.price,
+    image: req.body.image
    
     
   };
@@ -104,6 +107,64 @@ app.post("/createproduct", function(req, res){
 });
 
 
+
+// url to delete JSON
+
+app.get("/deleteproduct/:id", function(req, res){
+    
+  var json = JSON.stringify(products); // Convert our json data to a string
+  
+  var keyToFind = parseInt(req.params.id) // Getes the id from the URL
+  var data = products; // Tell the application what the data is
+  var index = data.map(function(d) {return d.id;}).indexOf(keyToFind)
+  console.log("variable Index is : " + index)
+  console.log("The Key you ar looking for is : " + keyToFind);
+  
+  products.splice(index, 1);
+  json = JSON.stringify(products, null, 4); // converts the data to a json file and the null and 4 represent how it is structuere. 4 is indententation 
+      fs.writeFile('./model/products.json', json, 'utf8')
+  res.redirect("/products");
+    
+});
+
+
+
+// root to edit products page  
+app.get("/update/:id", function(req, res){
+    
+    
+     function chooseContact(indOne){
+   return indOne.id === parseInt(req.params.id)
+  
+     }
+ 
+  var indOne = products.filter(chooseContact);
+  
+  //res.send(indOne)
+  res.render("update.ejs", {indOne});
+    
+    
+    
+ 
+    
+});
+
+
+
+
+// Create post request to edit the individual review
+app.post('/update/:id', function(req, res){
+ var json = JSON.stringify(products);
+ var keyToFind = parseInt(req.params.id); // Id passed through the url
+ //var data = contact; // declare data as the reviews json file
+  var index = products.map(function(contact) {return contact.id;}).indexOf(keyToFind)
+ 
+
+ products.splice(index, 1, {name: req.body.name, Comment: req.body.price, id: parseInt(req.params.id), brand: req.body.brand, image: req.body.image});
+ json = JSON.stringify(products, null, 4);
+ fs.writeFile('./model/products.json', json, 'utf8'); // Write the file back
+ res.redirect("/");
+});
 
 
 

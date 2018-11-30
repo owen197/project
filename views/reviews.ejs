@@ -2,6 +2,34 @@
 
 <body style="background-image:url(/reviews.jpg)">
     
+    <div class="w3-row w3-border" id="reviewPost">
+  <div class="w3-half w3-container w3-blue w3-border" id="reviewBox">
+    <h5>Here is a list</h5>  
+    <ol>
+
+ 
+</ol>
+<input type="text" id="comment" name="comment" placeholder="Leave a Comment..">
+<button id="putUp" class="w3-btn w3-theme">Post</button> 
+
+  </div>
+  </div>
+    
+    
+    
+         
+       </div>
+    </div>
+    <script> 
+    $(document).ready(function(){
+	$("#putUp").click(function(){
+		$("ol").append("</br><li>Owen: " + comment.value + "</li>")
+		
+		});
+		});
+    
+    </script>
+    
     
     
     

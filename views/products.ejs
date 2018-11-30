@@ -1,7 +1,7 @@
+  <% include ../partials/header %>
 
 
-
-<body style="background-image:url(/many.jpg)">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
     <div class="row">
     <% products.forEach(function(products) { %>
@@ -13,12 +13,14 @@
                     
                    
                     </div>
-              
+              <a href="/deleteproduct/<%= products.id %>">Delete me</a>
+              <br>
+               <a href="/update/<%= products.id %>">Update</a>
          <% }); %>
   </div>
     
     
-</body>
+
 
 
 

@@ -3,30 +3,30 @@
 <div class="row">
   <h1>Welcome to the add products page  <br>
   <div class="grid-container">
-        
-            <form accept-charset="UTF-8" action="/createproduct" method="post">    
+         <% indOne.forEach(function(products) { %>
+            <form accept-charset="UTF-8" action="/update/<%= products.id %>" method="post">    
                 <div class="item">
                   <label for="name">Name</label>
-                    <input name="name" type="text" placeholder="Enter name" />
+                    <input name="name" type="text" value="<%= products.name %>" />
                   
-                  
+                  <%= products.brand %>
                   <label for="brand">brand</label>
-                    <input name="brand" type="text" placeholder="enter brand" />
+                    <input name="brand" type="text" value="<%= products.brand %>" />
                     
                      <label for="price">price</label>
-                    <input name="price" type="text" placeholder="enter price" />
+                    <input name="price" type="text" value="<%= products.price %>" />
                     
                          <label for="image">Image</label>
-                    <input name="image" type="text" placeholder="enter id" />               
+                    <input name="image" type="text" value="<%= products.image %>" />               
               
                    
-<button class="button">Make new product</button>
+<button class="button">Update product</button>
                     
                    
                     </div>
               </form>
       
-         
+          <% }); %>
          
     </div>
   </h1>

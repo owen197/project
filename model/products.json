@@ -1,59 +1,5 @@
 [
     {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Polar M400",
-        "id": 1,
-        "brand": "nike",
-        "price": 199,
-        "image": "air.jpg"
-    },
-    {
-        "name": "Pollar M400",
-        "id": 2
-    },
-    {
-        "name": "Pollar M400",
-        "id": 3
-    },
-    {
-        "name": "Pollar M400",
-        "id": 4
-    },
-    {
         "name": "Pollar M400",
         "id": 5
     },
@@ -64,10 +10,6 @@
     {
         "name": "Pollar M400",
         "id": 7
-    },
-    {
-        "name": "Pollar M400",
-        "id": 8
     },
     {
         "name": "Pollar M400",
@@ -92,5 +34,24 @@
     {
         "name": "Pollar M400",
         "id": 14
+    },
+    {
+        "name": "Pollar M400",
+        "id": 15
+    },
+    {
+        "name": "Pollar M400",
+        "id": 16
+    },
+    {
+        "name": "fgfgf",
+        "id": 17
+    },
+    {
+        "name": "Shoe",
+        "Comment": "8",
+        "id": 18,
+        "brand": "Nike",
+        "image": "4444"
     }
 ]

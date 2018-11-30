@@ -1,6 +1,6 @@
 body {
     background-color: white;
-   
+   padding-top: 75;
     background-repeat:no-repeat;
     background-size: cover;
   text-align: center;
@@ -33,7 +33,7 @@ li a {
 		text-align: center;
 		font-weight: bold;
 		padding: 20px 56px;
-		box-shadow: 
+ 
 }
 
 
@@ -47,3 +47,9 @@ h1 {
     padding-top: 100px;
         
 }
+
+#reviewPost{
+	margin-top:200px;
+	margin-left:200px;
+}
+
