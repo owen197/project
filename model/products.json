@@ -7,9 +7,17 @@
         "image": "Lunar.jpg"
     },
     {
-        "name": "",
+        "name": "Lunar",
         "id": 2,
-        "brand": "",
-        "price": "200"
+        "brand": "Nike",
+        "price": "200",
+        "image": "1"
+    },
+    {
+        "name": "Pollar M400",
+        "id": 3,
+        "brand": "ffffffffffffffff",
+        "price": "69",
+        "image": "Lunar.jpg"
     }
 ]
