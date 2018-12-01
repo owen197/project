@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgba(50, 150, 71, 0.2);
    padding-top: 75;
     background-repeat:no-repeat;
     background-size: cover;
@@ -57,4 +57,9 @@ h1 {
 	margin-left: 200px;
 	float: left;
 	 background-color: #999;
+}
+
+#inputBoxes{
+	margin-left: 100px;
+
 }
