@@ -163,7 +163,7 @@ app.post('/update/:id', function(req, res){
  products.splice(index, 1, {name: req.body.name, Comment: req.body.price, id: parseInt(req.params.id), brand: req.body.brand, image: req.body.image});
  json = JSON.stringify(products, null, 4);
  fs.writeFile('./model/products.json', json, 'utf8'); // Write the file back
- res.redirect("/");
+ res.redirect("/products");
 });
 
 
