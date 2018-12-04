@@ -36,7 +36,7 @@ app.get("/products", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("products.ejs", {products});
-    console.log("products is working")
+    console.log("products page is working")
     
 });
 
@@ -46,7 +46,7 @@ app.get("/createproduct", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("createproduct.ejs");
-    console.log("on contacts page!")
+    console.log("on the create products page")
     
 });
 
@@ -183,7 +183,7 @@ app.get("/contacts", function(req, res){
     
    // res.send("This is the best class ever");
     res.render("contacts.ejs");
-    console.log("Contacts page!")
+    console.log("Contacts page is working!")
     
 });
 
@@ -231,7 +231,7 @@ app.get("/vans", function(req, res){
 
 
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
-  console.log("Off we go again");
+  console.log("Application is now running...");
   
 })
 
