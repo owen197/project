@@ -10,12 +10,11 @@
     <div class="row" id="created">
     <% products.forEach(function(products) { %>
                 
-                <div class="item">
+                <div class="item" id="individual">
 
                     ID:<%= products.id %><br><br>
                   Brand:  <%= products.brand %><br><br>
                    Name: <%= products.name %><br><br>
-                    <%= products.image %><br><br>
                    Price: <%= products.price %><br><br>
                     
 
@@ -30,9 +29,9 @@
                     
                     
                    
-              <a href="/deleteproduct/<%= products.id %>">Delete me</a>
+              <a href="/deleteproduct/<%= products.id %>" id="deleteButton">Delete Product</a>
               <br>
-               <a href="/update/<%= products.id %>">Update</a>
+               <a href="/update/<%= products.id %>" id="updateButton">Update Product</a>
          <% }); %>
   
     

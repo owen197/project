@@ -1,23 +1,8 @@
 [
     {
-        "name": "llllllllllllllll",
-        "Comment": "200",
-        "id": 2,
-        "brand": "Nike",
-        "image": "1"
-    },
-    {
-        "name": "Owen ",
-        "id": 3,
-        "brand": "shite",
-        "price": "1",
-        "image": "1"
-    },
-    {
-        "name": "Owen Thompson",
-        "id": 4,
-        "brand": "Nike",
-        "price": "69",
-        "image": "Lunar.jpg"
+        "name": "Pollar M400",
+        "id": 8,
+        "brand": "puma",
+        "price": "78"
     }
 ]
