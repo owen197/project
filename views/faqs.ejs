@@ -1,27 +1,29 @@
 
 <% include ../partials/header %>
 
-<body style="background-image:url(/suede.jpg)">
+<body style="background-image:url(/FAQS.jpg)">
     
-    
+  
+ <div id="validationBox">
+   
 <form id="form" name="myForm">
   First name:<br>
-  <input type="text" name="firstname" id="fname"><br>
+  <input type="text" name="firstname" id="fname" placeholder="Name"><br>
   <p id="alert1" class"alertx"></p>
   <br>
   E-mail:<br>
-  <input type="email" name="email" style="width: 600px" id="email">
+  <input type="email" name="email" id="email" placeholder="Please enter a valid e-mail address">
   <p id="alert2" class"alertx"></p>
   <br>
   Query<br>
-  <input type="text" name="textbox" style="width: 600px">
+  <input type="text" name="textbox" id="query" placeholder="Enter Query">
   <br>
   <br>
   <a onclick="submitForm()" id="submitButton"> Submit <i class='fas fa-arrow-circle-right'></i> </a>
   
 </form>
-
-
+<br><br><br>
+</div>
 
 
 
