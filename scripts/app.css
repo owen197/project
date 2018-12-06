@@ -92,10 +92,13 @@ h1 {
 	margin-left: 200px;
 	float: left;
 	 background-color: #999;
+	 
 }
 
 #inputBoxes{
 	margin-left: 100px;
+	text-align: left;
+	color: black;
 
 }
 
@@ -114,5 +117,21 @@ h1 {
 	
 }
 
+#update{
+	margin-left: 100px;
+	text-align: left;
+	color: black;
+	
+}
 
 
+#form{
+	margin-top: 100px;
+	color: white;
+}
+
+#logo{
+	float: right;
+	padding-left: 650px;
+	color: rgb(255, 22, 48);
+}

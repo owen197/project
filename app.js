@@ -31,6 +31,10 @@ app.get("/", function(req, res){
 });
 
 
+
+
+
+
 // root to render products page  
 app.get("/products", function(req, res){
     
@@ -79,8 +83,8 @@ app.post("/createproduct", function(req, res){
     name: req.body.name,
     id: newId, 
     brand: req.body.brand,
-    price: req.body.price,
-    image: req.body.image
+    price: req.body.price
+ 
 
    
     
@@ -161,9 +165,10 @@ app.post('/update/:id', function(req, res){
   var index = products.map(function(contact) {return contact.id;}).indexOf(keyToFind)
  
 
- products.splice(index, 1, {name: req.body.name, Comment: req.body.price, id: parseInt(req.params.id), brand: req.body.brand, image: req.body.image});
+ products.splice(index, 1, {name: req.body.name, price: req.body.price, id: parseInt(req.params.id), brand: req.body.brand,});
  json = JSON.stringify(products, null, 4);
  fs.writeFile('./model/products.json', json, 'utf8'); // Write the file back
+ console.log(req.body.price)
  res.redirect("/products");
 });
 
@@ -224,6 +229,14 @@ app.get("/vans", function(req, res){
     
 });
 
+// root to render submission page  
+app.get("/submitted", function(req, res){
+    
+   // res.send("This is the best class ever");
+    res.render("submitted.ejs");
+    console.log("submission page is working")
+    
+});
 
 
 

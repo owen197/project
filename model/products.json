@@ -1,8 +1,14 @@
 [
     {
-        "name": "Pollar M400",
-        "id": 8,
-        "brand": "puma",
-        "price": "78"
+        "name": "two",
+        "id": 13,
+        "brand": "llllllllllllllll",
+        "price": "22"
+    },
+    {
+        "name": "Test",
+        "price": "555",
+        "id": 14,
+        "brand": "UpdateTest"
     }
 ]

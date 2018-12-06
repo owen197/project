@@ -1,7 +1,7 @@
   <% include ../partials/header %>
 
 <div class="row">
-  <h1>Welcome to the add products page  <br>
+  <h1 id="update">Welcome to the add products page  <br>
   <div class="grid-container">
          <% indOne.forEach(function(products) { %>
             <form accept-charset="UTF-8" action="/update/<%= products.id %>" method="post">    
@@ -16,8 +16,7 @@
                      <label for="price">price</label>
                     <input name="price" type="text" value="<%= products.price %>" />
                     
-                         <label for="image">Image</label>
-                    <input name="image" type="text" value="<%= products.image %>" />               
+                                   
               
                    
 <button class="button">Update product</button>
@@ -31,10 +30,6 @@
     </div>
   </h1>
 </div>
-
-
-<label for="sport">Sport:</label>
-
 
 
 
