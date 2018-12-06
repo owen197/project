@@ -135,3 +135,11 @@ h1 {
 	padding-left: 650px;
 	color: rgb(255, 22, 48);
 }
+
+#logoButton{
+	margin-top:200px;
+}
+
+#submitButton{
+	margin-left: 600px;
+}

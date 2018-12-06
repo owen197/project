@@ -4,7 +4,7 @@
 <body style="background-image:url(/suede.jpg)">
     
     
-<form id="form" name="myForm" action="/submitted.ejs">
+<form id="form" name="myForm">
   First name:<br>
   <input type="text" name="firstname" id="fname"><br>
   <p id="alert1" class"alertx"></p>
@@ -17,10 +17,52 @@
   <input type="text" name="textbox" style="width: 600px">
   <br>
   <br>
-  <input type="submit" value="Submit" onclick="submitForm">
+  <a onclick="submitForm()" id="submitButton"> Submit <i class='fas fa-arrow-circle-right'></i> </a>
   
 </form>
 
+
+
+
+
+<script>
+    
+    
+    
+    
+    
+    function submitForm(){
+//alert("W")
+
+//code to verify name input
+//alert(x); testing
+var x = document.getElementById("fname").value;
+
+if(x==""){
+document.getElementById("alert1").innerHTML = "Name can not be blank";
+}
+
+
+else if(/\S+/.test(x)) {
+document.getElementById("alert1").innerHTML = "Confirmed!";
+
+}
+//code to verify the email address
+var y = document.getElementById("email").value;
+var result = (/@/.test(y))
+
+if (result == false){
+document.getElementById("alert2").innerHTML = "invalid email";
+}
+
+else if (result == true){
+document.getElementById("alert2").innerHTML = "Valid email";
+}
+
+
+
+}
+</script>
 
 <br><br><br>
 
