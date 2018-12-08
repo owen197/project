@@ -89,6 +89,21 @@ h1 {
         
 }
 
+#updateButton:hover{
+	background-color: rgb(255, 22, 48);
+    color: white;
+    text-decoration: none;
+	
+}
+
+#deleteButton:hover{
+	background-color: rgb(255, 22, 48);
+    color: white;
+    text-decoration: none;
+	
+}
+
+
 #reviewPost{
 	margin-top:200px;
 	margin-left:200px;
@@ -113,19 +128,31 @@ h1 {
 }
 
 #reviewBox{
-	margin-bottom: 200px;
-	margin-left: 200px;
-	margin-top: 200px;
-	margin-right: 200px;
-	
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 16%;
+	background-color: rgb(255, 69, 82);
+	padding-top: 30px;
+	padding-bottom: 90px;
+	border-radius: 8px;
+	font-family: 'Permanent Marker', cursive;
 }
 
+#reviewBox.button:hover{
+	
+	background-color: rgb(255, 22, 48);
+	padding-left:385px;
+	padding-right:385px;
+	
+	
+	
+}
 #individual{
 	padding-left: 25px;
 	padding-right: 25px;
 	
-	
 }
+
 
 #update{
 	margin-left: 100px;

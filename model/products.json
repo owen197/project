@@ -1,14 +1,14 @@
 [
     {
-        "name": "two",
-        "id": 13,
-        "brand": "llllllllllllllll",
-        "price": "22"
-    },
-    {
         "name": "Test",
-        "price": "555",
+        "price": "199",
         "id": 14,
         "brand": "UpdateTest"
+    },
+    {
+        "name": "Owen ",
+        "price": "fgfzdxfg",
+        "id": 15,
+        "brand": "nike"
     }
 ]
