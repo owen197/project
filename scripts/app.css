@@ -6,7 +6,7 @@ body {
   text-align: center;
    
 }
-/******************BUTTON STYLING**********************************/
+/******************BUTTON AND NAVBAR STYLING**********************************/
 a{
 	background-color: rgb(255, 69, 82); 
   border: none;
@@ -26,17 +26,22 @@ ul {
 	position: fixed;
 	left: 0;
 	margin: 0;
-	padding: 0;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 3px;
 	top: 0;
 	width: 100%;
 	overflow: hiddden;
 	background-color:  rgba(300, 99, 71, 0.5);
 	
 	
+	
+	
 }
 
 li {
 	float: left;
+
 	
 }
 
@@ -51,9 +56,10 @@ li a {
 }
 
 
-li a:hover {
+li a:hover{
     background-color: rgb(255, 22, 48);
     color: white;
+    text-decoration:none;
 }
 
 
@@ -99,6 +105,10 @@ h1 {
 	margin-left: 100px;
 	text-align: left;
 	color: black;
+
+}
+
+#form{
 
 }
 
@@ -180,4 +190,8 @@ h1 {
 
 #createPrice{
 	width: 600px;
+}
+
+#formDiv{
+	color: black;
 }

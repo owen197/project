@@ -1,22 +1,23 @@
 <% include ../partials/header %>
 
 <body style="background-image:url(/court.jpg)">
+
   <script>
     
     $(document).ready(function(){
 $("#toggleDown").click(function(){
- $("#menu").slideToggle(1000);
+ $("#face").slideToggle(1000);
 
 
-	});
+});
 });
   </script>
   
-<!--BUTTON TO TOGGLE JQUERY FUNCTION-->
-<button style="padding-top:100px" type="button" class="btn btn-secondary btn-lg btn-block" id="toggleDown">Our Brands</button>
-<!-- DIV THAT WILL SLIDE DOWN UPON CLICKING THE ABOVE -->
-<center>
-<div id="menu"style="margin-top:10px; display:none;">
+  <br><br><br><br><br><br><br><br>
+  <div id="face" style= "display:none; height:500px; background:#555;width:100%;">
+    
+    <center>
+<div id="menu"style="margin-top:10px;">
   <div class="row" style="border-width:2px; height:100px;">
     <div class="col-sm" style="margin-top:150px;" >
       <a href ="/nike"><img src="nike.png" height="200" /></a>
@@ -33,6 +34,16 @@ $("#toggleDown").click(function(){
   </div>
 </div>
 </center>
+    
+    
+    
+    
+  </div>
+  
+  
+<button style="padding-top:100px" type="button" class="btn btn-secondary btn-lg btn-block" id="toggleDown">Our Brands</button>
+
+
 
 
 

@@ -42,6 +42,7 @@ var x = document.getElementById("fname").value;
 
 if(x==""){
 document.getElementById("alert1").innerHTML = "Name can not be blank";
+window.alert("please fill in the required feilds properly");
 }
 
 
@@ -55,6 +56,7 @@ var result = (/@/.test(y))
 
 if (result == false){
 document.getElementById("alert2").innerHTML = "invalid email";
+window.alert("please fill in the required feilds properly")
 }
 
 else if (result == true){

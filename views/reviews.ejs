@@ -9,6 +9,7 @@
 
  
 </ol>
+<input type="text" id="nameyyy" name="nameyyy" placeholder="name">
 <input type="text" id="comment" name="comment" placeholder="Leave a Comment..">
 <button id="putUp" class="w3-btn w3-theme">Post</button> 
 
@@ -23,7 +24,7 @@
     <script> 
     $(document).ready(function(){
 	$("#putUp").click(function(){
-		$("ol").append("</br><li>Owen: " + comment.value + "</li>")
+		$("ol").append("</br><li>"+nameyyy.value +": "+ comment.value + "</li>")
 		
 		});
 		});
