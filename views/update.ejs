@@ -1,23 +1,25 @@
   <% include ../partials/header %>
 
 <div class="row">
-  <h1 id="update">Welcome to the add products page  <br>
+  <h1 id="update">
+     <br>
   <div class="grid-container">
          <% indOne.forEach(function(products) { %>
             <form accept-charset="UTF-8" action="/update/<%= products.id %>" method="post">    
                 <div class="item">
-                  <label for="name">Name</label>
+                  <br>
+                  <label for="name">Name:  </label>
                     <input name="name" type="text" value="<%= products.name %>" />
                   
-                  <%= products.brand %>
-                  <label for="brand">brand</label>
+                  <br>
+                  <label for="brand">Brand:  </label>
                     <input name="brand" type="text" value="<%= products.brand %>" />
-                    
-                     <label for="price">price</label>
+                    <br>
+                     <label for="price">Price:  </label>
                     <input name="price" type="text" value="<%= products.price %>" />
                     
                                    
-              
+              <br><br>
                    
 <button class="button">Update product</button>
                     

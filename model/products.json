@@ -1,14 +1,14 @@
 [
     {
-        "name": "Test",
-        "price": "199",
+        "name": "new addition",
+        "price": "6556",
         "id": 14,
-        "brand": "UpdateTest"
+        "brand": "jkuhgkhj"
     },
     {
-        "name": "Owen ",
-        "price": "666",
-        "id": 15,
-        "brand": "nike"
+        "name": "Pollar M400",
+        "id": 16,
+        "brand": "nike",
+        "price": "199"
     }
 ]
