@@ -11,7 +11,7 @@ var products = require("./model/products.json") // Allow access to contact json 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
-// we need some way for the app to know where to look
+// These show the app what folders to look for
 app.use(express.static("views"));
 app.use(express.static("scripts"));
 app.use(express.static("images"));
@@ -21,7 +21,7 @@ app.use(express.static("model"));
 
 app.set("view engine", "ejs");//this line sets the default view engine
 
-// Route ro render index page 
+// Route to render index page 
 app.get("/", function(req, res){
     
    // res.send("This is the best class ever");
@@ -29,10 +29,6 @@ app.get("/", function(req, res){
     console.log("Index/home page is working")
     
 });
-
-
-
-
 
 
 // root to render products page  
@@ -45,7 +41,7 @@ app.get("/products", function(req, res){
 });
 
 
-// route to render contact info page 
+// route to render the create products page 
 app.get("/createproduct", function(req, res){
     
    // res.send("This is the best class ever");
@@ -113,7 +109,7 @@ app.post("/createproduct", function(req, res){
 
 
 
-// url to delete JSON
+// url to delete JSON/////THIS IS THE CODE FOR DELETING DATA FROM THE JSON FILE///////////////
 
 app.get("/deleteproduct/:id", function(req, res){
     
@@ -132,7 +128,7 @@ app.get("/deleteproduct/:id", function(req, res){
     
 });
 
-
+///////////////////////////UPDATING THE JSON FILE DATA//////////////////
 
 // root to edit products page  
 app.get("/update/:id", function(req, res){
@@ -229,14 +225,6 @@ app.get("/vans", function(req, res){
     
 });
 
-// root to render submission page  
-app.get("/submitted", function(req, res){
-    
-   // res.send("This is the best class ever");
-    res.render("submitted.ejs");
-    console.log("submission page is working")
-    
-});
 
 
 
