@@ -17,6 +17,7 @@
   <br>
   Query<br>
   <input type="text" name="textbox" id="query" placeholder="Enter Query">
+  <p id="alert3" class"alertx"></p>
   <br>
   <br>
   <a onclick="submitForm()" id="submitButton"> Submit <i class='fas fa-arrow-circle-right'></i> </a>
@@ -41,43 +42,55 @@
 var x = document.getElementById("fname").value;
 
 if(x==""){
-document.getElementById("alert1").innerHTML = "Name can not be blank";
-window.alert("please fill in the required feilds properly");
+document.getElementById("alert1").innerHTML = "*Name can not be blank";
+window.alert("please fill in the required feilds (name) properly");
 }
 
 
 else if(/\S+/.test(x)) {
-document.getElementById("alert1").innerHTML = "Confirmed!";
+document.getElementById("alert1").innerHTML = "Valid name!";
 
 }
-//code to verify the email address
+//code to verify the email address///////////////////////////////
+
 var y = document.getElementById("email").value;
 var result = (/@/.test(y))
 
 if (result == false){
-document.getElementById("alert2").innerHTML = "invalid email";
-window.alert("please fill in the required feilds properly")
+document.getElementById("alert2").innerHTML = "*Invalid email";
+window.alert("Please fill in the required feilds (e-mail) properly")
 }
 
 else if (result == true){
-document.getElementById("alert2").innerHTML = "Valid email";
+document.getElementById("alert2").innerHTML = "Valid email!";
 }
+
+
+/*CODE TO VARIFY AND VALIDATE QUERY**************************************/
+
+var z = document.getElementById("query").value;
+
+if(z==""){
+document.getElementById("alert3").innerHTML = "*You did not enter a query";
+window.alert("Please fill in the required feilds (query) properly");
+}
+
+
+else if(/\S+/.test(x)) {
+document.getElementById("alert3").innerHTML = "Your query has been successfully submitted!";
+
+}
+
+
+
+
 
 
 
 }
 </script>
 
-<br><br><br>
-
-
-
-
-
-
-
-
-
+<br><br>
 
 
 <div id="faqs">
