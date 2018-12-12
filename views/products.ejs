@@ -2,14 +2,14 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 
 
-    
+     <% products.forEach(function(products) { %>
     <div class="row" id="created">
         <br><br><br><br>
-    <% products.forEach(function(products) { %>
+   
     
                 <div>
                     
@@ -35,21 +35,15 @@
               <a href="/deleteproduct/<%= products.id %>" id="deleteButton">Delete Product  <i class='fas fa-trash-alt'></i></a>
               <br>
                <a href="/update/<%= products.id %>" id="updateButton">Update Product  <i class='fas fa-sync-alt'></i></a>
-         <% }); %>
+         
   
     
     
 
 
 </div>
-
-
-
-
-
-
-
-
+<br>
+<% }); %>
 
 
 <% include ../partials/footer %>

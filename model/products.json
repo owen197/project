@@ -1,14 +1,20 @@
 [
     {
-        "name": "new addition",
-        "price": "6556",
-        "id": 14,
-        "brand": "jkuhgkhj"
+        "name": "Air Max 270",
+        "price": "115",
+        "id": 16,
+        "brand": "Nike"
     },
     {
-        "name": "Pollar M400",
-        "id": 16,
-        "brand": "nike",
-        "price": "199"
+        "name": "Air Max 270",
+        "price": "99*",
+        "id": 17,
+        "brand": "jjjjjjjjjjj"
+    },
+    {
+        "name": "Air Max 270",
+        "id": 18,
+        "brand": "Nike",
+        "price": "888"
     }
 ]

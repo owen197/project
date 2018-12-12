@@ -9,16 +9,16 @@
      <h4 style="color:white;">Please fill in the boxes below:</h4>
    
 <form id="form" name="myForm">
-  First name:<br><br>
+  Name:<br>
   <input type="text" name="firstname" id="fname" placeholder="Name"><br>
   <p id="alert1" class"alertx"></p>
   <br>
-  E-mail:<br><br>
+  E-mail:<br>
   <input type="email" name="email" id="email" placeholder="Please enter a valid e-mail address">
   <p id="alert2" class"alertx"></p>
   <br>
-  Query:<br><br>
-  <input type="text" name="textbox" id="query" placeholder="Enter Query">
+  Query:<br>
+  <textarea type="text" name="textbox" id="query" placeholder="Enter Query"></textarea>
   <p id="alert3" class"alertx"></p>
   <br>
   <br>
@@ -32,10 +32,6 @@
 
 <script>
     
-    
-    
-    
-    
     function submitForm(){
 //alert("W")
 
@@ -44,13 +40,13 @@
 var x = document.getElementById("fname").value;
 
 if(x==""){
-document.getElementById("alert1").innerHTML = "*Name can not be blank  <i class='fas fa-times-circle'></i>";
+document.getElementById("alert1").innerHTML = "<i class='fas fa-times-circle'></i>  Name can not be blank";
 window.alert("Please fill in the required feilds (name) properly");
 }
 
 
 else if(/\S+/.test(x)) {
-document.getElementById("alert1").innerHTML = "Valid name  <i class='fas fa-check-circle'></i>";
+document.getElementById("alert1").innerHTML = "<i class='fas fa-check-circle'></i> Valid name";
 
 }
 //code to verify the email address///////////////////////////////
@@ -59,12 +55,12 @@ var y = document.getElementById("email").value;
 var result = (/@/.test(y))
 
 if (result == false){
-document.getElementById("alert2").innerHTML = "*Invalid email  <i class='fas fa-times-circle'></i>";
+document.getElementById("alert2").innerHTML = "<i class='fas fa-times-circle'></i> Invalid email  ";
 window.alert("Please fill in the required feilds (e-mail) properly")
 }
 
 else if (result == true){
-document.getElementById("alert2").innerHTML = "Valid email!  <i class='fas fa-check-circle'></i>";
+document.getElementById("alert2").innerHTML = "<i class='fas fa-check-circle'></i> Valid email!  ";
 }
 
 
@@ -73,13 +69,13 @@ document.getElementById("alert2").innerHTML = "Valid email!  <i class='fas fa-ch
 var z = document.getElementById("query").value;
 
 if(z==""){
-document.getElementById("alert3").innerHTML = "*You did not enter a query  <i class='fas fa-times-circle'></i>";
+document.getElementById("alert3").innerHTML = "<i class='fas fa-times-circle'></i> You did not enter a query ";
 window.alert("Please fill in the required feilds (query) properly");
 }
 
 
 else if(/\S+/.test(x)) {
-document.getElementById("alert3").innerHTML = "Your query has been successfully submitted!  <i class='fas fa-check-circle'></i>";
+document.getElementById("alert3").innerHTML = "<i class='fas fa-check-circle'></i> Your query has been successfully submitted! ";
 
 }
 
