@@ -79,7 +79,8 @@ app.post("/createproduct", function(req, res){
     name: req.body.name,
     id: newId, 
     brand: req.body.brand,
-    price: req.body.price
+    price: req.body.price,
+    
  
 
    

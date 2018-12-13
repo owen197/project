@@ -41,7 +41,6 @@ ul {
 
 li {
 	float: left;
-
 	
 }
 
@@ -81,6 +80,7 @@ button:hover {
     color: white;
 }
 
+
 /***********************************************************************************/
 
 h1 {
@@ -111,7 +111,7 @@ h1 {
 
 #created{
 	margin-left: 200px;
-	margin-right: 1200px;
+	margin-right: 1100px; /*to adjust each product****/
 	 background-color: #999;
 	 
 }
@@ -123,9 +123,6 @@ h1 {
 
 }
 
-#form{
-
-}
 
 /*******REVIEWS AND COMMENTS****************/
 #reviewBox{
@@ -181,6 +178,10 @@ h1 {
 #form{
 	margin-top: 100px;
 	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #submitButton{
@@ -246,4 +247,11 @@ h1 {
 #adidas:hover{
 	background-color: rgb(255, 22, 48);
     color: white;
+}
+
+/*****/
+
+#twitter{
+	background-color: rgb(229, 246, 246);
+	font-size:12px;
 }
