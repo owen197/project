@@ -120,8 +120,11 @@ h1 {
 	margin-left: 100px;
 	text-align: left;
 	color: black;
+	
 
 }
+
+
 
 
 /*******REVIEWS AND COMMENTS****************/
@@ -174,7 +177,6 @@ h1 {
 	color: white;
 }
 
-
 #form{
 	margin-top: 100px;
 	color: white;
@@ -182,7 +184,10 @@ h1 {
 	padding-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	
 }
+
 
 #submitButton{
 	margin-left: 40%;
