@@ -256,7 +256,47 @@ h1 {
 
 /*****/
 
-#twitter{
-	background-color: rgb(229, 246, 246);
-	font-size:12px;
+#vanspage{
+	margin-top: 5%;
+}
+
+#adidaspage{
+	margin-top:5%;
+}
+
+#nikepage{
+	margin-top: 5%;
+}
+
+#nikebanner{
+	background-color: rgb(255, 69, 82);
+	width: 100%;
+}
+
+#adidasbanner{
+	background-color: rgb(255, 69, 82);
+	width: 100%;
+}
+
+#vansbanner{
+	background-color: rgb(255, 69, 82);
+	width: 100%;
+}
+
+
+#toggleDown{
+	background-color: rgb(255, 69, 82);
+	
+}
+
+#contactsdiv{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 16%;
+	background-color: rgb(255, 69, 82);
+	padding-top: 30px;
+	padding-bottom: 90px;
+	
+	border-radius: 8px;
+
 }

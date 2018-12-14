@@ -4,7 +4,53 @@
 <body style="background-image:url(/adidaspage.jpg)">
     
     
-    
+       
+<div class="w3-container" id="adidaspage">
+  
+  <div id="create" style="background-color:red; color:white;">
+   <h2 id="adidasbanner">Create a product a product using the Vans shoe models below! </h2>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="addidasshoes1.png" style="width:500px; height:300px;display:none"> 
+  <img class="mySlides" src="addidasshoes2.png" style="width:500px; height:300px;">
+  <img class="mySlides" src="adiddasshoes3.png" style="width:500px; height:300px;display:none">
+
+  <div class="w3-row-padding w3-section" style="background-color:white;">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="addidasshoes1.png" style="width:65%;cursor:pointer" onclick="currentDiv(1)"><b><p>SimpleOnes</p> <br/> <pstyle="color:white;">€80.00</p></b>
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="addidasshoes2.png" style="width:65%;cursor:pointer" onclick="currentDiv(2)"><b><p>ShakerMaker</p> <br/> <pstyle="color:white;">€95.00</p></b>
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="adiddasshoes3.png" style="width:65%;cursor:pointer" onclick="currentDiv(3)"><b><p>AsiaSand</p> <br/> <pstyle="color:white;">€120.00</p></b>
+    </div>
+  </div>
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
     
     
 </body>

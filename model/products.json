@@ -1,8 +1,26 @@
 [
     {
-        "name": "Pollar M400",
-        "price": "89",
-        "id": 20,
-        "brand": "Nike"
+        "name": "Air Max 270",
+        "id": 21,
+        "brand": "Nike",
+        "price": "115"
+    },
+    {
+        "name": "Old Skool",
+        "id": 22,
+        "brand": "Vans",
+        "price": "75"
+    },
+    {
+        "name": "X_plr",
+        "id": 23,
+        "brand": "Adidas",
+        "price": "88"
+    },
+    {
+        "name": "Grandstand li",
+        "id": 24,
+        "brand": "Nike",
+        "price": "100"
     }
 ]

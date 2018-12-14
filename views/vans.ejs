@@ -3,9 +3,54 @@
 <body style="background-image:url(/vanspage.jpg)">
     
     
-
-
     
+    
+<div class="w3-container" id="vanspage">
+  
+  <div id="create" style="background-color:red; color:white;">
+   <h2 id="vansbanner">Create a product a product using the Vans shoe models below! </h2>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="vansshoes1.png" style="width:500px; height:300px;display:none"> 
+  <img class="mySlides" src="vansshoes2.png" style="width:500px; height:300px;">
+  <img class="mySlides" src="vansshoes3.png" style="width:500px; height:300px;display:none">
+
+  <div class="w3-row-padding w3-section" style="background-color:black;">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="vansshoes1.png" style="width:65%;cursor:pointer" onclick="currentDiv(1)"><b><p style="color:white;">ClassicVans</p> <br/> <pstyle="color:white;">€80.00</p></b>
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="vansshoes2.png" style="width:65%;cursor:pointer" onclick="currentDiv(2)"><b><p style="color:white;">NewVans</p> <br/> <pstyle="color:white;">€95.00</p></b>
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="vansshoes3.png" style="width:65%;cursor:pointer" onclick="currentDiv(3)"><b><p style="color:white;">Redzers</p> <br/> <pstyle="color:white;">€120.00</p></b>
+    </div>
+  </div>
+</div>
+
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
     
 </body>
 
